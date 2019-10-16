@@ -56,7 +56,7 @@ cd Projects/Tutorials
 ```
 and execute the command
 ```bash
-git clone https://github.com/hbprosper/BarML
+git clone https://github.com/hbprosper/BariML
 ```
 This should download the package BariML to your current directory.
 
