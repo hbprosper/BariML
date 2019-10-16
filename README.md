@@ -18,7 +18,8 @@ The jupyter notebooks in this package depend on a few well-known Python packages
 | scikit-learn  | easy to use machine learning toolkit |
 | pytorch       | a powerful, flexible, machine learning toolkit |
 
-Also recommended are 
+Also recommended are
+
 | __modules__   | __description__     |
 | :---          | :--- |
 | scipy         | scientific computing    |
@@ -32,7 +33,7 @@ Follow similar instructions at
 
 https://jupyter.org/install
 
-in order to install the juypter notebook.
+in order to install the jupyter notebook.
 
 ### 1. Download
 It is a good idea to organize your computer-based projects in a systematic way. For example, in your home directory (usually the area identified by the environment variable $HOME), you may wish to create a directory (i.e., folder) called __Projects__ and create within it a sub-directory called __Tutorials__ as follows
@@ -60,7 +61,7 @@ git clone https://github.com/hbprosper/BarML
 This should download the package BariML to your current directory.
 
 ### 2. Unpack MNIST data set
-A couple of the tutorials use data from the MNIST website, reformatted in a way that is quicker to load.
+A couple of the tutorials use data from the MNIST website, reformatted in a way that is quicker to load. Go to the jupyter Home tab in your browser and navigate to __BariML/datasets__ where you will find the notebook __prepare_mnist_data.ipynb__. Click on this filename to activate this notebook and run it to completion. You can find help on running notebooks here
 
-## Setup
+https://jupyter.readthedocs.io/en/latest/running.html#running
 
