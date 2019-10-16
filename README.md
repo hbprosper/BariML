@@ -4,6 +4,21 @@ An introduction to fully connected deep neural networks (DNN) and convolutional 
 
 Much of the work in the machine learning community has indeed been, and continues to be, extremely creative. But, all too often, when described, machine learning models come across as mysterious and inscrutable. In part this is because of the highly suggestive jargon that permeates machine learning. For example, the word "learning" is misleading. Learning, as ordinarily understood, implies understanding. But can it really be said that a mathematical function, even one with tens of millions of parameters understands? The answer, at the very least,  is unclear.
 
+### Dependencies
+The jupyter notebooks in this package depend on a few well-known Python packages:
+
+| __modules__   | __description__     |
+| :---          | :---        |
+| pandas        | data table manipulation, often with data loaded from csv files |
+| numpy         | array manipulation and numerical analysis      |
+| scipy         | scientific computing    |
+| matplotlib    | a widely used plotting module for producing high quality plots |
+| pylab         | embedded within matplotlib and provides Matlab-like features |
+| scikit-learn  | easy to use machine learning toolkit |
+| pytorch       | a very flexible machine learning toolkit
+| sympy         | an excellent symbolic algebra module |
+
+
 ## Setup
 ### 1. Download
 ```bash
