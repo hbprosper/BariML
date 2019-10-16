@@ -5,7 +5,7 @@ An introduction to fully connected deep neural networks (DNN) and convolutional 
 Much of the work in the machine learning community has indeed been, and continues to be, extremely creative. But, all too often, when described, machine learning models come across as mysterious and inscrutable. In part this is because of the highly suggestive jargon that permeates machine learning. For example, the word "learning" is misleading. Learning, as ordinarily understood, implies understanding. But can it really be said that a mathematical function, even one with tens of millions of parameters understands? The answer, at the very least,  is unclear.
 
 ## Setup
-### 1. Download this package:
+### 1. Download
 ```bash
 git clone https://github.com/hbprosper/BarML
 ```
