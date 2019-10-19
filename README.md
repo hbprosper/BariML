@@ -4,7 +4,7 @@ An introduction to fully connected deep neural networks (DNN) and convolutional 
 
 Much of the work in the machine learning community has indeed been, and continues to be, extremely creative. But, all too often, when described, machine learning models come across as mysterious and inscrutable. In part this is because of the highly suggestive jargon that permeates the machine learning field. For example, the word "learning" is misleading. Learning, as ordinarily understood, implies understanding. But can it really be said that a mathematical function understands? The answer, at the very least,  is unclear.
 
-This tutorial comprises several __jupyter__ notebooks (see below) that are known to work with Python 2.7.x with x > 9. They may also work with Python 3.x.y, but this has not been checked.
+This tutorial comprises several __jupyter__ notebooks (see below) that should work with Python 2.7.x with x > 9 as well as Python 3.7.4. 
 
 ### Dependencies and Installation
 The jupyter notebooks in this package depend on a few well-known Python packages:
@@ -25,11 +25,21 @@ Also recommended are
 | scipy         | scientific computing    |
 | sympy         | an excellent symbolic algebra module |
 
-The easiest way to install these standard packages is to follow the instructions at
+Perhaps the simplest way to install these packages is first to install miniconda (or anaconda) on your laptop by following the instructions at:
+
+https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html
+
+Then follow the instructions at
+
+https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/
+
+in order to install packages that are not already part of the Anaconda distribution.
+
+Or, follow the instructions at
 
 https://www.scipy.org/install.html
 
-Follow similar instructions at
+and 
 
 https://jupyter.org/install
 
@@ -61,7 +71,21 @@ git clone https://github.com/hbprosper/BariML
 This should download the package BariML to your current directory.
 
 ### 2. Unpack MNIST data set
-A couple of the tutorials use data from the MNIST website, reformatted in a way that is quicker to load. Go to the jupyter Home tab in your browser and navigate to __BariML/datasets__ where you will find the notebook __prepare_mnist_data.ipynb__. Click on this filename to activate this notebook and run it to completion. You can find help on running notebooks here
+__NOTE:__ Some of the tutorials use data from the MNIST website, reformatted in a way that is quicker to load. In order to create the reformatted MNIST files,  go to the jupyter __Home__ tab in your browser and navigate to __BariML/datasets__. There you will find the notebook __prepare_mnist_data.ipynb__. Click on this filename to activate this notebook and run it to completion. You can find help on running notebooks here
 
 https://jupyter.readthedocs.io/en/latest/running.html#running
+
+This will create two files __mnist_train.pkl__ and __mnist_test.pkl__ that are needed by the notebooks.
+
+### 3. Notebooks
+
+| __notebooks__                   | __description__     |
+| :---          | :--- |
+datasets/prepare_mnist_data.ipynb     | create mnist\_train.pkl and mnist\_test.pkl |
+roofit/roofit_example.ipynb           | fit cosmological models to Type 1a supernova data |
+sklearn/scikit-learn_exercise_0.ipynb | fit a purely empirical model (a neural network) to Type 1a supernova data | 
+sklearn/scikit-learn_exercise_1.ipynb | regression (wine quality estimation) using a neural network model |
+sklearn/scikit-learn_exercise_2.ipynb | classification of MNIST data using a deep neural network model |
+pytorch/pytorch_exercise_1.ipynb      | classification of MNIST data using a shallow neural network model |
+pytorch/pytorch_exercise_2.ipynb      | classification of MNIST data using a convolution neural network model  |
 
