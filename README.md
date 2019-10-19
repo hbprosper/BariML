@@ -84,7 +84,7 @@ The notebooks provide detailed background information and explanations and are w
 | __notebooks__                   | __description__     |
 | :---          | :--- |
 datasets/prepare_mnist_data.ipynb     | Create files mnist\_train.pkl and mnist\_test.pkl |
-roofit/roofit_example.ipynb           | Use RooFit to fit cosmological models to Type 1a supernova data |
+roofit/roofit_example.ipynb           | Use RooFit (needs ROOT from CERN) to fit cosmological models to Type 1a supernova data |
 sklearn/scikit-learn_exercise_0.ipynb | Fit a purely empirical model (a neural network) to Type 1a supernova data | 
 sklearn/scikit-learn_exercise_1.ipynb | Regression (wine quality estimation) using a neural network model |
 sklearn/scikit-learn_exercise_2.ipynb | Classification of MNIST data using a deep neural network model |
