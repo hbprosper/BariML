@@ -57,7 +57,7 @@ conda install vpython -c vpython
 ```
 If all goes well, you will have installed a rather complete set of amazing high quality *absolutely free* software packages on your system that are consistent with Python 3.7.4.
 
-More some quick help on conda see 
+For some quick help on conda see 
 
 https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/
 
