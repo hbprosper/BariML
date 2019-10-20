@@ -25,17 +25,44 @@ Also recommended are
 | scipy         | scientific computing    |
 | sympy         | an excellent symbolic algebra module |
 
-Perhaps the simplest way to install these packages is first to install miniconda (or anaconda) on your laptop by following the instructions at:
+The simplest way to install these packages is first to install miniconda (or Anaconda) on your laptop by following the instructions at:
 
 https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html
 
-Then follow the instructions at
+Software release systems such as Anaconda (conda for short) make it possible to have several separate self-consistent named *environments* on a single machine, say your laptop. For example, you may need to use Python 2.7.14 sometimes and Python 3.7.4 at other times. If you install software without using carefully controled *environments* there is the very real danger that the software on your laptop will become inconsistent. Anaconda (and its lightweight companion miniconda) provide a way, for example, to create a software *environment* consistent with Python 2.7.14 and another that is consistent with Python 3.7.4. 
+
+Let's assume you want to run this tutorial using Python 3.7.4. It is a good idea to update conda using the command
+```bash
+conda update conda
+```
+Assuming conda is properly installed and initialized on your laptop, you can create an environment, here we call it *python3*, containing a large subset of the packages in the conda system using the command
+```bash
+conda create -n python3 python=3.7.4 anaconda
+```
+Before pressing __y__ to continue with the installation, scan through the list of packages and identify which of the above are in the list. That way, you will know which ones are missing and need to be installed using the conda install command. For example, neither __pytorch__ nor __ROOT__ from CERN are available by default. In order to install these packages, first be sure to choose in which conda environment they are to be installed. First activate the desired environment, by doing, for example,
+```bash
+conda activate python3
+```
+Then to install pytorch do
+```bash
+conda install pytorch torchvision -c pytorch
+```
+and to install ROOT do
+```bash
+conda install root -c conda-forge
+```
+You may also wish to install the rather impressive 3-d annimation system __vpython__,
+```bash
+conda install vpython -c vpython
+```
+If all goes well, you will have installed a rather complete set of amazing high quality *absolutely free* software packages on your system that are consistent with Python 3.7.4.
+
+More some quick help on conda see 
 
 https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/
 
-in order to install packages that are not already part of the Anaconda distribution.
 
-Or, follow the instructions at
+If you still prefer to do everything by hand, follow the instructions at
 
 https://www.scipy.org/install.html
 
@@ -43,7 +70,6 @@ and
 
 https://jupyter.org/install
 
-in order to install the jupyter notebook.
 
 ### 1. Download
 It is a good idea to organize your computer-based projects in a systematic way. For example, in your home directory (usually the area identified by the environment variable $HOME), you may wish to create a directory (i.e., folder) called __Projects__ and create within it a sub-directory called __Tutorials__ as follows
