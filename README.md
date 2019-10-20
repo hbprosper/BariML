@@ -29,7 +29,7 @@ The simplest way to install these packages is first to install miniconda (or Ana
 
 https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html
 
-Software release systems such as Anaconda (conda for short) make it possible to have several separate self-consistent named *environments* on a single machine, say your laptop. For example, you may need to use Python 2.7.14 sometimes and Python 3.7.4 at other times. If you install software without using carefully controled *environments* there is the very real danger that the software on your laptop will become inconsistent. Anaconda (and its lightweight companion miniconda) provide a way, for example, to create a software *environment* consistent with Python 2.7.14 and another that is consistent with Python 3.7.4. 
+Software release systems such as Anaconda (__conda__ for short) make it possible to have several separate self-consistent named *environments* on a single machine, say your laptop. For example, you may need to use Python 2.7.14 sometimes and Python 3.7.4 at other times. If you install software without using *environments* there is the very real danger that the software on your laptop will become inconsistent. Anaconda (and its lightweight companion miniconda) provide a way, for example, to create a software *environment* consistent with Python 2.7.14 and another that is consistent with Python 3.7.4. 
 
 Let's assume you want to run this tutorial using Python 3.7.4. It is a good idea to update conda using the command
 ```bash
