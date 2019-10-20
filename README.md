@@ -51,7 +51,7 @@ and to install ROOT do
 ```bash
 conda install root -c conda-forge
 ```
-You may also wish to install the rather impressive 3-d annimation system __vpython__,
+You may also wish to install the rather impressive 3D animation package __vpython__,
 ```bash
 conda install vpython -c vpython
 ```
