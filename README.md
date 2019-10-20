@@ -39,7 +39,7 @@ Assuming conda is properly installed and initialized on your laptop, you can cre
 ```bash
 conda create -n python3 python=3.7.4 anaconda
 ```
-Before pressing __y__ to continue with the installation, scan through the list of packages and identify which of the above are in the list. That way, you will know which ones are missing and need to be installed using the conda install command. For example, neither __pytorch__ nor __ROOT__ from CERN are available by default. In order to install these packages, first be sure to choose in which conda environment they are to be installed. First activate the desired environment, by doing, for example,
+Before pressing __y__ to continue with the installation, scan through the list of packages and identify which of the above are in the list. That way, you will know which ones are missing and need to be installed using the conda install command. For example, as of this writing neither __pytorch__ nor the CERN __ROOT__ package are available by default. In order to install these packages, first be sure to choose in which conda environment they are to be installed. First activate the desired environment, by doing, for example,
 ```bash
 conda activate python3
 ```
