@@ -97,11 +97,11 @@ git clone https://github.com/hbprosper/BariML
 This should download the package BariML to your current directory.
 
 ### 2. Unpack MNIST data set
-__NOTE:__ Some of the tutorials use data from the MNIST website, reformatted in a way that is quicker to load. In order to create the reformatted MNIST files,  go to the jupyter __Home__ tab in your browser and navigate to __BariML/datasets__. There you will find the notebook __prepare_mnist_data.ipynb__. Click on this filename to activate this notebook and run it to completion. You can find help on running notebooks here
+__NOTE:__ Some of the tutorials use data from the MNIST website, reformatted in a way that is quicker to load. In order to create the reformatted MNIST files,  go to the jupyter __Home__ tab in your browser and navigate to __BariML/datasets__. There you will find the notebook __prepare_mnist_data.ipynb__. Click on this filename to activate this notebook and run it to completion. This will create two files __mnist_train.pkl__ and __mnist_test.pkl__ that are needed by the notebooks.
+
+You can find help on running notebooks here
 
 https://jupyter.readthedocs.io/en/latest/running.html#running
-
-This will create two files __mnist_train.pkl__ and __mnist_test.pkl__ that are needed by the notebooks.
 
 ### 3. Notebooks
 
