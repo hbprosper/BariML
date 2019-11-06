@@ -81,7 +81,7 @@ In a terminal window dedicated to running the jupyter notebook, do
 ```bash
 cd
 cd Projects
-juypter notebook
+jupyter notebook
 ```
 This will run the notebook in your browser and block the terminal window, which you can iconize.
 
