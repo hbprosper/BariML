@@ -57,6 +57,12 @@ You may also wish to install the rather impressive 3D animation package __vpytho
 ```bash
 conda install vpython -c vpython
 ```
+Finally, if you plan to do C++ development, you should install the __gcc___ suite of compiler tools using
+```bash
+conda install gcc
+```
+Note, all the above packages should be installed into a given environment, which here we have called *python3*.
+
 If all goes well, you will have installed a rather complete set of amazing high quality *absolutely free* software packages on your system that are consistent with Python 3.6.7.
 
 For some quick help on conda see 
