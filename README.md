@@ -4,7 +4,7 @@ An introduction to fully connected deep neural networks (DNN) and convolutional 
 
 Much of the work in the machine learning community has indeed been, and continues to be, extremely creative. But, all too often, when described, machine learning models come across as mysterious and inscrutable. In part this is because of the highly suggestive jargon that permeates the machine learning field. For example, the word "learning" is misleading. Learning, as ordinarily understood, implies understanding. But can it really be said that a mathematical function understands? The answer, at the very least,  is unclear.
 
-This tutorial comprises several __jupyter__ notebooks (see below) that should work with Python 2.7.x with x > 9 as well as Python 3.7.4. 
+This tutorial comprises several __jupyter__ notebooks (see below) that should work with Python 2.7.x with x > 9 as well as Python 3.6.7. 
 
 ### Dependencies and Installation
 The jupyter notebooks in this package depend on a few well-known Python packages:
@@ -25,19 +25,21 @@ Also recommended are
 | scipy         | scientific computing    |
 | sympy         | an excellent symbolic algebra module |
 
-The simplest way to install these packages is first to install miniconda (or Anaconda) on your laptop by following the instructions at:
+The simplest way to install these packages is first to install miniconda (a slim version of Anaconda) on your laptop by following the instructions at:
 
 https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html
 
-Software release systems such as Anaconda (__conda__ for short) make it possible to have several separate self-consistent named *environments* on a single machine, say your laptop. For example, you may need to use Python 2.7.14 sometimes and Python 3.7.4 at other times. If you install software without using *environments* there is the very real danger that the software on your laptop will become inconsistent. Anaconda (and its lightweight companion miniconda) provide a way, for example, to create a software *environment* consistent with Python 2.7.14 and another that is consistent with Python 3.7.4. 
+I recommend installing miniconda3, which comes pre-packaged with Python 3.
 
-Let's assume you want to run this tutorial using Python 3.7.4. It is a good idea to update conda using the command
+Software release systems such as Anaconda (__conda__ for short) make it possible to have several separate self-consistent named *environments* on a single machine, say your laptop. For example, you may need to use Python 2.7.14 sometimes and Python 3.6.7 at other times. If you install software without using *environments* there is the very real danger that the software on your laptop will become inconsistent. Anaconda (and its lightweight companion miniconda) provide a way, for example, to create a software *environment* consistent with Python 2.7.14 and another that is consistent with Python 3.6.7. 
+
+After installing miniconda3, It is a good idea to update conda using the command
 ```bash
 conda update conda
 ```
 Assuming conda is properly installed and initialized on your laptop, you can create an environment, here we call it *python3*, containing a large subset of the packages in the conda system using the command
 ```bash
-conda create -n python3 python=3.7.4 anaconda
+conda create -n python3 anaconda
 ```
 Before pressing __y__ to continue with the installation, scan through the list of packages and identify which of the above are in the list. That way, you will know which ones are missing and need to be installed using the conda install command. For example, as of this writing neither __pytorch__ nor the CERN __ROOT__ package are available by default. In order to install these packages, first be sure to choose in which conda environment they are to be installed. First activate the desired environment, by doing, for example,
 ```bash
@@ -55,7 +57,13 @@ You may also wish to install the rather impressive 3D animation package __vpytho
 ```bash
 conda install vpython -c vpython
 ```
-If all goes well, you will have installed a rather complete set of amazing high quality *absolutely free* software packages on your system that are consistent with Python 3.7.4.
+Finally, if you plan to do C++ development, you should install the __gcc___ suite of compiler tools using
+```bash
+conda install gcc
+```
+Note, all the above packages should be installed into a given environment, which here we have called *python3*.
+
+If all goes well, you will have installed a rather complete set of amazing high quality *absolutely free* software packages on your system that are consistent with Python 3.6.7.
 
 For some quick help on conda see 
 
