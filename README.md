@@ -1,10 +1,10 @@
 # BariML
 ## Introduction
-An introduction to fully connected deep neural networks (DNN) and convolutional neural networks (CNN) in which their mathematical underpinning is explained. Machine learning (ML) models are mathematical functions that happen to be much more complicated than the ones typically found in textbooks for scientists and engineers. The exponential growth in ML-based applications is due, in part, to four breakthroughs. The first is the current ability to fit enormously complicated functions to data, something that was technologically impossible at the start of the century. The second is the ability to use huge data sets for fitting these models. The third is the discovery that these complicated functions can mimic behavior associated with intelligence and last but not least is the invention by machine learning researchers of highly expressive models and very effective fitting methods.
+This ia an introduction to fully connected deep neural networks (DNN) and convolutional neural networks (CNN) in which their mathematical underpinning is explained. Machine learning (ML) models are mathematical functions that are much more complicated than the ones typically found in textbooks for scientists and engineers. The exponential growth in ML-based applications is due, in part, to four breakthroughs. The first is the current ability to fit enormously complicated functions to data, something that was technologically impossible at the start of the century. The second is the ability to use huge data sets for fitting these models. The third is the discovery that these complicated functions can mimic behavior associated with intelligence. And, last, but not least, is the invention by machine learning researchers of highly expressive models and very effective fitting methods.
 
 Much of the work in the machine learning community has indeed been, and continues to be, extremely creative. But, all too often, when described, machine learning models come across as mysterious and inscrutable. In part this is because of the highly suggestive jargon that permeates the machine learning field. For example, the word "learning" is misleading. Learning, as ordinarily understood, implies understanding. But can it really be said that a mathematical function understands? The answer, at the very least,  is unclear.
 
-This tutorial comprises several __jupyter__ notebooks (see below) that should work with Python 2.7.x with x > 9 as well as Python 3.6.7. 
+This tutorial comprises several __jupyter__ notebooks (see below) that should work with Python 2.7.x with x > 9 as well as with Python 3. 
 
 ### Dependencies and Installation
 The jupyter notebooks in this package depend on a few well-known Python packages:
@@ -37,11 +37,11 @@ After installing miniconda3, It is a good idea to update conda using the command
 ```bash
 conda update conda
 ```
-Assuming conda is properly installed and initialized on your laptop, you can create an environment, here we call it *python3*, containing a large subset of the packages in the conda system using the command
+Assuming conda is properly installed and initialized on your laptop, you can create an environment, here we call it *python3*, containing the __root__ package from CERN, plus a large subset of the packages in the conda system, using the command>
 ```bash
-conda create -n python3 anaconda
+conda create -c conda-forge --name python3 root
 ```
-Before pressing __y__ to continue with the installation, scan through the list of packages and identify which of the above are in the list. That way, you will know which ones are missing and need to be installed using the conda install command. For example, as of this writing neither __pytorch__ nor the CERN __ROOT__ package are available by default. In order to install these packages, first be sure to choose in which conda environment they are to be installed. First activate the desired environment, by doing, for example,
+Before pressing __y__ to continue with the installation, scan through the list of packages and identify which of the above are in the list. That way, you will know which ones are missing and need to be installed using the conda install command. For example, as of this writing __pytorch__ is not available by default. In order to install a missing packages, first be sure to choose the conda environment into which the package is to be installed. First activate the desired environment, by doing, for example,
 ```bash
 conda activate python3
 ```
@@ -49,19 +49,10 @@ Then to install pytorch do
 ```bash
 conda install pytorch torchvision -c pytorch
 ```
-and to install ROOT do
-```bash
-conda install root -c conda-forge
-```
 You may also wish to install the rather impressive 3D animation package __vpython__,
 ```bash
 conda install vpython -c vpython
 ```
-Finally, if you plan to do C++ development, you should install the __gcc___ suite of compiler tools using
-```bash
-conda install gcc
-```
-Note, all the above packages should be installed into a given environment, which here we have called *python3*.
 
 If all goes well, you will have installed a rather complete set of amazing high quality *absolutely free* software packages on your system that are consistent with Python 3.6.7.
 
@@ -120,8 +111,9 @@ The notebooks provide detailed background information and explanations and are w
 datasets/prepare_mnist_data.ipynb     | Create files mnist\_train.pkl and mnist\_test.pkl |
 roofit/roofit_example.ipynb           | Use RooFit (needs ROOT from CERN) to fit cosmological models to Type 1a supernova data |
 sklearn/scikit-learn_exercise_0.ipynb | Fit a purely empirical model (a neural network) to Type 1a supernova data | 
-sklearn/scikit-learn_exercise_1.ipynb | Regression (wine quality estimation) using a neural network model |
-sklearn/scikit-learn_exercise_2.ipynb | Classification of MNIST data using a deep neural network model |
-pytorch/pytorch_exercise_1.ipynb      | Classification of MNIST data using a shallow neural network model |
-pytorch/pytorch_exercise_2.ipynb      | Classification of MNIST data using a convolution neural network model  |
+sklearn/scikit-learn_exercise_1.ipynb | Regression (wine quality estimation) using a neural network |
+sklearn/scikit-learn_exercise_2.ipynb | Classification of MNIST data using a deep neural network |
+pytorch/pytorch_exercise_1.ipynb      | Classification of MNIST data using a shallow neural network |
+pytorch/pytorch_exercise_2.ipynb      | Classification of MNIST data using a convolution neural network |
+pytorch/pytorch_exercise_3.ipynb      | Clustering of MNIST data using an autoencoder  |
 
