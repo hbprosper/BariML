@@ -45,7 +45,15 @@ Before pressing __y__ to continue with the installation, scan through the list o
 ```bash
 conda activate python3
 ```
-Then to install pytorch do
+Later, in order to update root together with a consistent set of packages do
+```bash
+conda update root
+```
+taking care to do so in the desired conda environment, here __python3__.
+
+### Other Packages
+
+To install pytorch do
 ```bash
 conda install pytorch torchvision -c pytorch
 ```
